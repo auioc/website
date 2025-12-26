@@ -1,0 +1,84 @@
+baseURL = 'https://hi.auioc.org/'
+title = 'Hi.AUIOC'
+hasCJKLanguage = true
+
+enableGitInfo = true
+
+theme = 'hugo-theme-hibeta'
+
+defaultContentLanguage = "zh-cn"
+
+resourceDir = "tmp/hugo_resources"
+
+[markup]
+    _merge = "shallow"
+
+# uglyURLs = true
+[languages.zh-cn]
+    languageCode = "zh-cn"
+
+[taxonomies]
+    tag = "tags"
+    category = "categories"
+
+[permalinks]
+    [permalinks.page]
+        posts = '/post/:year/:month/:slug/'
+    [permalinks.section]
+        posts = '/posts'
+
+[menus]
+    [[menus.main]]
+        name = '文章'
+        url = '/posts'
+        weight = 1
+    [[menus.main]]
+        name = '标签'
+        url = '/tags'
+        weight = 2
+    [[menus.main]]
+        name = '分类'
+        url = '/categories'
+        weight = 3
+    [[menus.main]]
+        name = '关于'
+        url = 'about/'
+        weight = 10
+
+    [[menus.home]]
+        name = 'Posts'
+        url = '/posts'
+        weight = 1
+    [[menus.home]]
+        name = 'About'
+        url = 'about/'
+        weight = 10
+
+[params]
+    description = "A website built through Hugo and blogdown."
+    toc = true
+    defaultAuthor = ""
+    copyrightLicense = "CC BY-NC-SA 4.0"
+    dateFormat = "2006-01-02"
+    shortDateFormat = "01/02"
+    dateTimeFormat = "2006-01-02 03:04:05 -07:00"
+    [params.home]
+        backgroundColor = "#4284a4"
+        frontgroundColor = "#fff"
+        logo = "/assets/logo.svg"
+    [params.footer]
+        # poweredBy = false
+        showVersion = true
+        [params.footer.copyright]
+            year = 2016
+            author = "AUIOC"
+            link = "https://www.auioc.org"
+            rights = "All Rights Reserved."
+    [params.development]
+        shortcodesUseLocalCdn = true
+    [params.repository]
+        branch = 'main'
+        owner = 'auioc'
+        repo = 'website'
+        urlEdit = 'https://github.com/%s/%s/edit/%s/%s'
+        urlView = 'https://github.com/%s/%s/blob/%s/%s'
