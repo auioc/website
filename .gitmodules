@@ -1,0 +1,3 @@
+[submodule "themes/hugo-theme-hibeta"]
+	path = themes/hugo-theme-hibeta
+	url = git@github.com:auioc/hugo-theme-hibeta.git

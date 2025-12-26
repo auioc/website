@@ -1,0 +1,32 @@
+{
+    "markdownlint.config": {
+        "MD033": false
+    },
+    "cSpell.words": [
+        "anchorize",
+        "errorf",
+        "hibeta",
+        "hljs",
+        "hljsw",
+        "isset",
+        "mbox",
+        "noheader",
+        "plainify",
+        "randomid",
+        "warnf"
+    ],
+    "files.associations": {
+        "**/layouts/**/fn/**/*": "html"
+    },
+    "files.exclude": {
+        "tmp/": true
+    },
+    "conventionalCommits.scopes": [
+        "shortcode",
+        "i18n",
+        "layout",
+        "style",
+        "js",
+        "repo"
+    ]
+}
