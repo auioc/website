@@ -59,9 +59,11 @@ resourceDir = "tmp/hugo_resources"
     toc = true
     defaultAuthor = ""
     copyrightLicense = "CC BY-NC-SA 4.0"
-    dateFormat = "2006-01-02"
-    shortDateFormat = "01/02"
-    dateTimeFormat = "2006-01-02 03:04:05 -07:00"
+    [params.datetimeFormats]
+        # time = "15:04:05"
+        # date = "2006-01-02"
+        # dateShort = "01/02"
+        datetime = "2006-01-02 15:04:05 MST"
     [params.home]
         backgroundColor = "#4284a4"
         frontgroundColor = "#fff"

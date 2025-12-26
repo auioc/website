@@ -27,6 +27,8 @@
         "layout",
         "style",
         "js",
-        "repo"
+        "repo",
+        "content.post",
+        "debug"
     ]
 }
