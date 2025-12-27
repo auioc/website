@@ -1,4 +1,4 @@
-baseURL = 'https://hi.auioc.org/'
+baseURL = 'https://www.auioc.org/'
 title = 'Hi.AUIOC'
 hasCJKLanguage = true
 
@@ -8,7 +8,13 @@ theme = 'hugo-theme-hibeta'
 
 defaultContentLanguage = "zh-cn"
 
+disableHugoGeneratorInject = true
+
 resourceDir = "tmp/hugo_resources"
+
+[pagination]
+    # pagerSize = 6
+    path = ""
 
 [markup]
     _merge = "shallow"
@@ -55,7 +61,7 @@ resourceDir = "tmp/hugo_resources"
         weight = 10
 
 [params]
-    description = "A website built through Hugo and blogdown."
+    description = ""
     toc = true
     defaultAuthor = ""
     copyrightLicense = "CC BY-NC-SA 4.0"
@@ -67,14 +73,14 @@ resourceDir = "tmp/hugo_resources"
     [params.home]
         backgroundColor = "#4284a4"
         frontgroundColor = "#fff"
-        logo = "/assets/logo.svg"
+        logo = "Hi.AUIOC"
     [params.footer]
         # poweredBy = false
         showVersion = true
         [params.footer.copyright]
             year = 2016
             author = "AUIOC"
-            link = "https://www.auioc.org"
+            link = "https://auioc.org"
             rights = "All Rights Reserved."
     [params.development]
         shortcodesUseLocalCdn = true
