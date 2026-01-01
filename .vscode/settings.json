@@ -29,6 +29,9 @@
         "js",
         "repo",
         "content.post",
-        "debug"
+        "debug",
+        "asset",
+        "widget",
+        "fn"
     ]
 }
