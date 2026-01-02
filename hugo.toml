@@ -64,7 +64,7 @@ resourceDir = "tmp/hugo_resources"
     description = ""
     toc = true
     defaultAuthor = ""
-    copyrightLicense = "CC BY-NC-SA 4.0"
+    copyrightLicense = ""
     [params.datetimeFormats]
         # time = "15:04:05"
         # date = "2006-01-02"
@@ -83,7 +83,7 @@ resourceDir = "tmp/hugo_resources"
             link = "https://auioc.org"
             rights = "All Rights Reserved."
     [params.development]
-        shortcodesUseLocalCdn = true
+        replaceCdnHosts = ['https://cdnjs.cloudflare.com']
     [params.repository]
         branch = 'main'
         owner = 'auioc'
