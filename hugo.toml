@@ -41,6 +41,16 @@ resourceDir = "tmp/hugo_resources"
             position = "footer"
     [cascade.target]
         path = '{/docs,/docs/**}'
+[[cascade]]
+    [cascade.params]
+        titlePrefix = "tag"
+    [cascade.target]
+        path = '/tags/**'
+[[cascade]]
+    [cascade.params]
+        titlePrefix = "category"
+    [cascade.target]
+        path = '/categories/**'
 
 [menus]
     [[menus.main]]
