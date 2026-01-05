@@ -7,7 +7,7 @@ tags:
 
 ## GoAT 图表
 
-保留了 Hugo 内建的 [GoAT](https://github.com/bep/goat) 图表支持，更多可信息见 [Hugo 文档](https://gohugo.io/content-management/diagrams/#goat-diagrams-ascii)。
+保留了 Hugo 内建的 [GoAT](https://github.com/bep/goat) 图表支持，更多信息见 [Hugo 文档](https://gohugo.io/content-management/diagrams/#goat-diagrams-ascii)。
 
 {{< example type="row" extended=false >}}
 
