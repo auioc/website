@@ -11,16 +11,16 @@ tags:
 
 ### 参数
 
-| 名称        | 类型                         | 必要   | 值                          | 描述                                                |
-| ----------- | ---------------------------- | ------ | --------------------------- | --------------------------------------------------- |
-| （*Inner*） |                              | **是** |                             |                                                     |
-| `title`     | {{<datatype string 字符串>}} | 否     |                             | 表格标题                                            |
-| `type`      | {{<datatype string 字符串>}} | 否     | **`row`**（默认）、`col`    | 上下对照 或 左右对照 显示                           |
-| `inline`    | {{<datatype bool 布尔>}}     | 否     | `true`、**`false`**（默认） | 使用 `code` 或 `pre` 展示 Markdown 源码             |
-| `icon`      | {{<datatype bool 布尔>}}     | 否     | **`true`**（默认）、`false` | 是否显示 Markdown 图标 ({{<icon "xi-markdown">}})   |
-| `extended`  | {{<datatype bool 布尔>}}     | 否     | **`true`**（默认）、`false` | 是否使渲染效果栏占满横向空间，只适用于 `type="row"` |
-| `class`     | {{<datatype string 字符串>}} | 否     |                             | 额外的 CSS 类                                       |
-| `style`     | {{<datatype string 字符串>}} | 否     |                             | 额外的 CSS 样式                                     |
+| 名称        | 类型                         | 必要   | 值                          | 描述                                                                                                      |
+| ----------- | ---------------------------- | ------ | --------------------------- | --------------------------------------------------------------------------------------------------------- |
+| （*Inner*） |                              | **是** |                             |                                                                                                           |
+| `title`     | {{<datatype string 字符串>}} | 否     |                             | 表格标题                                                                                                  |
+| `type`      | {{<datatype string 字符串>}} | 否     | **`row`**（默认）、`col`    | 上下对照 或 左右对照 显示                                                                                 |
+| `inline`    | {{<datatype bool 布尔>}}     | 否     | `true`、**`false`**（默认） | 使用 `code` 或 `pre` 展示 Markdown 源码                                                                   |
+| `icon`      | {{<datatype bool 布尔>}}     | 否     | **`true`**（默认）、`false` | 是否显示 Markdown 图标 ({{<icon "xi-markdown">}})                                                         |
+| `extended`  | {{<datatype bool 布尔>}}     | 否     | `true`、`false`             | 是否使渲染效果栏占满横向空间<br>当 `type` 为 `row` 时默认为 `true`<br>当 `type` 为 `col` 时默认为 `false` |
+| `class`     | {{<datatype string 字符串>}} | 否     |                             | 额外的 CSS 类                                                                                             |
+| `style`     | {{<datatype string 字符串>}} | 否     |                             | 额外的 CSS 样式                                                                                           |
 
 ### 用法
 
