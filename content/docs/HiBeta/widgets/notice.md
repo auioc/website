@@ -62,18 +62,25 @@ tags:
 
 ### 参数
 
-| 名称    | 必要 | 值                      | 描述                       |
-| ------- | ---- | ----------------------- | -------------------------- |
-| `type`  | 是   | （见上方，共 9 个类型） | 提示类型                   |
-| `icon`  | 否   |                         | 提示的图标，默认与类型相关 |
-| `title` | 否   |                         | 提示的标题，默认与类型相关 |
+| 名称     | 类型                                                     | 必要   | 值                          | 描述                                                  |
+| -------- | -------------------------------------------------------- | ------ | --------------------------- | ----------------------------------------------------- |
+| `type`   | {{<datatype string 字符串>}}                             | **是** | （见上方，共 9 个类型）     | 提示类型                                              |
+| `title`  | {{<datatype string 字符串>}}                             | 否     |                             | 提示的标题，默认与类型相关                            |
+| `icon`   | {{<datatype string 字符串>}} / {{<datatype bool>}} false | 否     |                             | 提示的图标，默认与类型相关<br>设置为 `false` 禁用图标 |
+| `small`  | {{<datatype bool 布尔>}}                                 | 否     | `true`、**`false`**（默认） | 小号的提示                                            |
+| `simple` | {{<datatype bool 布尔>}}                                 | 否     | `true`、**`false`**（默认） | 简化的提示                                            |
 
 ### 示例
 
 {{< example >}}
 {{%/* notice type="info" */%}}The quick brown fox jumps over the lazy dog.{{%/*/notice*/%}}
-{{%/* notice type="info" icon="bi-pen" */%}}The quick brown fox jumps over the lazy dog.{{%/*/notice*/%}}
-{{%/* notice type="info" icon="bi-pen" title="Pen" */%}}The quick brown fox jumps over the lazy dog.{{%/*/notice*/%}}
+{{%/* notice type="info" icon=false */%}}这是一个**没有图标**的提示{{%/*/notice*/%}}
+{{%/* notice type="info" icon="bi-pen" */%}}这是一个指定了**图标**的提示{{%/*/notice*/%}}
+{{%/* notice type="info" icon="bi-pen" title="Pen" */%}}这是一个指定了**图标**和**标题**的提示{{%/*/notice*/%}}
+{{%/* notice type="tip" small=true */%}}这是一个小号的提示{{%/*/notice*/%}}
+{{%/* notice type="tip" simple=true */%}}这是一个简化的提示{{%/*/notice*/%}}
+{{%/* notice type="tip" simple=true small=true */%}}这是一个简化的小号的的提示{{%/*/notice*/%}}
+{{%/* notice type="tip" simple=true small=true icon=false */%}}这是一个没有图标的简化的小号的的提示{{%/*/notice*/%}}
 {{< /example >}}
 
 ## 局部模板
@@ -82,10 +89,12 @@ tags:
 
 #### 参数
 
-| 名称      | 类型                            | 必要 | 值                      | 描述                       |
-| --------- | ------------------------------- | ---- | ----------------------- | -------------------------- |
-| `page`    | {{<datatype object hugo.Page>}} | 是   |                         |                            |
-| `type`    | {{<datatype string 字符串>}}    | 是   | （见上方，共 9 个类型） | 提示类型                   |
-| `content` | {{<datatype any Any>}}          | 否   |                         | 提示的内容                 |
-| `icon`    | {{<datatype string 字符串>}}    | 否   |                         | 提示的图标，默认与类型相关 |
-| `title`   | {{<datatype string 字符串>}}    | 否   |                         | 提示的标题，默认与类型相关 |
+| 名称      | 类型                                                     | 必要   | 值                          | 描述                                                  |
+| --------- | -------------------------------------------------------- | ------ | --------------------------- | ----------------------------------------------------- |
+| `page`    | {{<datatype object hugo.Page>}}                          | **是** |                             |                                                       |
+| `type`    | {{<datatype string 字符串>}}                             | **是** | （见上方，共 9 个类型）     | 提示类型                                              |
+| `content` |                                                          | 否     |                             | 提示的内容                                            |
+| `title`   | {{<datatype string 字符串>}}                             | 否     |                             | 提示的标题，默认与类型相关                            |
+| `icon`    | {{<datatype string 字符串>}} / {{<datatype bool>}} false | 否     |                             | 提示的图标，默认与类型相关<br>设置为 `false` 禁用图标 |
+| `small`   | {{<datatype bool 布尔>}}                                 | 否     | `true`、**`false`**（默认） | 小号的提示                                            |
+| `simple`  | {{<datatype bool 布尔>}}                                 | 否     | `true`、**`false`**（默认） | 简化的提示                                            |
