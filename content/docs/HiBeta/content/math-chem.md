@@ -82,8 +82,9 @@ x Na(NH4)HPO4 ->[\Delta] (NaPO3)_x + x NH3 ^ + x H2O
 
 > [!WARNING]
 > 目前虽支持 [透传](https://gohugo.io/render-hooks/passthrough/) 使用常见的标记（如 `$$ ... $$`、`\[ ... \]`、`\( ... \)` 等）来展示表达式，
+> 但出于稳定性考虑，更推荐使用代码块或短代码。
 >
-> 但出于稳定性考虑，更推荐使用代码块或短代码
+> 透传功能默认关闭，可通过[配置](/docs/hibeta/config/#markup_merge)文件启用。
 
 ### 数学
 
