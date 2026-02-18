@@ -12,6 +12,8 @@ disableHugoGeneratorInject = true
 
 resourceDir = "tmp/hugo_resources"
 
+enableEmoji = true
+
 [pagination]
     # pagerSize = 6
     path = ""

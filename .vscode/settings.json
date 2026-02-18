@@ -1,6 +1,7 @@
 {
     "markdownlint.config": {
-        "MD033": false
+        "MD033": false,
+        "MD011": false
     },
     "cSpell.words": [
         "anchorize",
