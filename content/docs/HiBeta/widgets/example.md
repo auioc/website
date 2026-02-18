@@ -19,6 +19,7 @@ tags:
 | `inline`    | {{<datatype bool 布尔>}}     | 否     | `true`、**`false`**（默认） | 使用 `code` 或 `pre` 展示 Markdown 源码                                                                   |
 | `icon`      | {{<datatype bool 布尔>}}     | 否     | **`true`**（默认）、`false` | 是否显示 Markdown 图标 ({{<icon "xi-markdown">}})                                                         |
 | `extended`  | {{<datatype bool 布尔>}}     | 否     | `true`、`false`             | 是否使渲染效果栏占满横向空间<br>当 `type` 为 `row` 时默认为 `true`<br>当 `type` 为 `col` 时默认为 `false` |
+| `unescape`  | {{<datatype bool 布尔>}}     | 否     | `true`、**`false`**（默认） | 是否在渲染前进行反转义<br/>在自我嵌套中内层的此参数将覆盖外层                                             |
 | `class`     | {{<datatype string 字符串>}} | 否     |                             | 额外的 CSS 类                                                                                             |
 | `style`     | {{<datatype string 字符串>}} | 否     |                             | 额外的 CSS 样式                                                                                           |
 
@@ -39,7 +40,16 @@ tags:
 {{</* /example */>}}
     {{< /example >}}
 
-2. 通过此短代码的自我嵌套，可在一个表格中对照展示多段 Markdown 源码
+    {{% notice type="important" simple=true small=true %}}对于需要展示的内容，若**包含 Markdown 扩展语法**，需要将内容进行[**转义**](/docs/hibeta/content/escape)后使用参数 **`unescape`** 进行渲染{{% /notice %}}
+
+    {{< example unescape=true type="row" extended=false >}}
+{{</* example unescape=true type="col" */>}}
+[汉]{{;;}^}(hàn)[字]{{;;}^}(zì)
+{{;;}:}blush:
+{{</* /example */>}}
+    {{< /example >}}
+
+1. 通过此短代码的自我嵌套，可在一个表格中对照展示多段 Markdown 源码
     {{< example type="col" >}}
 {{</* example type="col" inline=true */>}}
     {{</* example */>}}
