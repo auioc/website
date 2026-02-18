@@ -13,21 +13,21 @@ tags:
 
 {{< example unescape=true type="col" inline=true >}}
 {{< example >}}
-[汉]{;?}(hàn)[字]{;?}(zì)
+[汉]{;^}(hàn)[字]{;^}(zì)
 {{< /example >}}
 {{< example >}}
-[漢]{;?}(ㄏㄢˋ)[字]{;?}(ㄗˋ)
+[漢]{;^}(ㄏㄢˋ)[字]{;^}(ㄗˋ)
 {{< /example >}}
 {{< example >}}
-[漢]{;?}(かん)[字]{;?}(じ)s
+[漢]{;^}(かん)[字]{;^}(じ)
 {{< /example >}}
 {{< example >}}
-[漢]{;?}(한)[字]{;?}(자)
+[漢]{;^}(한)[字]{;^}(자)
 {{< /example >}}
 {{< /example >}}
 
 {{< example unescape=true type="col" inline=true >}}
-[**汉**]{;?}(hàn)[字]{;?}(*zì*)
+[**汉**]{;^}(hàn)[字]{;^}(*zì*)
 {{< /example >}}
 
 ## 短代码
