@@ -1,8 +1,8 @@
 ---
 title: 注音和字符注释
 tags:
-  - Hugo
-  - HiBeta
+    - Hugo
+    - HiBeta
 ---
 
 ## 简介
@@ -16,41 +16,72 @@ tags:
 [汉]{;^}(hàn)[字]{;^}(zì)
 {{< /example >}}
 {{< example >}}
-[漢]{;^}(ㄏㄢˋ)[字]{;^}(ㄗˋ)
-{{< /example >}}
-{{< example >}}
-[漢]{;^}(かん)[字]{;^}(じ)
-{{< /example >}}
-{{< example >}}
-[漢]{;^}(한)[字]{;^}(자)
+[**汉**]{;^}(hàn)[字]{;^}(_zì_)
 {{< /example >}}
 {{< /example >}}
 
+{{< notice type="tip" render=false >}}
+如下所见，繁体中文汉字、日文汉字、韩文汉字并非对应语言的正确字形：
 {{< example unescape=true type="col" inline=true >}}
-[**汉**]{;^}(hàn)[字]{;^}(*zì*)
+{{< example >}}
+[骨]{;^}(ㄍㄨˇ)
 {{< /example >}}
+{{< example >}}
+[骨]{;^}(ほね)
+{{< /example >}}
+{{< example >}}
+[骨]{;^}(골)
+{{< /example >}}
+{{< /example >}}
+如果需要指定语言，请使用<b>短代码</b>。
+{{< /notice >}}
 
 ## 短代码
 
 ### 参数
 
-| 名称         | 必要              | 值                                    | 描述 |
-| ------------ | ----------------- | ------------------------------------- | ---- |
-| （匿名参数） | 是（有且只有2个） | 第1个：原文<br/>第2个：注音或字符注释 |      |
+<table>
+<thead>
+  <tr><th>名称</th><th>必要</th><th>值</th><th>描述</th></tr>
+</thead>
+<tbody>
+  <tr>
+    <td rowspan="4">（位置参数）</td><td>是</td><td>原文</td><td></td>
+  </tr>
+  <tr>
+    <td>是</td><td>注音或字符注释</td><td></td>
+  </tr>
+  <tr>
+    <td>否</td><td>原文语言</td><td></td>
+  </tr>
+  <tr>
+    <td>否</td><td>注音或字符注释的语言</td><td>不指定即使用原文语言</td>
+  </tr>
+</tbody>
+</table>
 
 ### 示例
 
 {{< example unescape=true type="col" inline=true >}}
 {{< example >}}
-{{</* ruby "汉" "hàn" */>}}
+{{</* ruby "骨" "gǔ" */>}}
 {{< /example >}}
 {{< example >}}
-{{</* ruby "漢" "ㄏㄢˋ" */>}}
+{{</* ruby "**骨**" "*gǔ*" */>}}
+{{< /example >}}
+{{< /example >}}
+
+{{< example unescape=true type="col" inline=true >}}
+{{< example >}}
+{{</* ruby "骨" "gǔ" "zh-Hans" */>}}
 {{< /example >}}
 {{< example >}}
-{{</* ruby "漢" "かん" */>}}
+{{</* ruby "骨" "ㄍㄨˇ" "zh-Hant" */>}}
 {{< /example >}}
 {{< example >}}
-{{</* ruby "漢" "한" */>}}
+{{</* ruby "骨" "ほね" "ja" "ja-Hrkt" */>}}
+{{< /example >}}
+{{< example >}}
+{{</* ruby "骨" "골" "ko-Kore" "ko" */>}}
 {{< /example >}}
 {{< /example >}}
